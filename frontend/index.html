@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>espText</title>
+</head>
+<body>
+    <input id="text" type="text" style="height: 45px; width: 300px;">
+    <button id="send" onclick="send()">Enviar</button>
+    
+    <script>
+    function send(){
+        const text = document.getElementById('text').value;
+        fetch('/send/' + text, {
+            method: 'POST'
+        })
+        .then(res => res.text())
+        .then(res => alert(res));
+    }
+    </script>
+</body>
+</html>

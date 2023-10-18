@@ -1,0 +1,11 @@
+{
+  "name": "esptext",
+  "version": "1.0.0",
+  "description": "",
+  "main": "backend/app.js",
+  "scripts": {
+    "start": "node backend/app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
